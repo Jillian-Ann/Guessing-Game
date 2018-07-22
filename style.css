@@ -26,6 +26,7 @@
       background-color: white;
       position: absolute;
       bottom: 0;
+      color:black;
   }
   #input-parent {
       margin:20px;
@@ -55,13 +56,11 @@
   body {
     background-image: url('woman.jpg');
     background-repeat: no-repeat;
-    background-size: 70% 100%;
+    background-size: 75% 100%;
     background-position: center;
-    overflow:hidden;
   }
 
 #app {
     width: 60%;
     margin: 50px auto;
 }
- 
