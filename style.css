@@ -8,12 +8,16 @@
     border-radius:100%;
     padding:0 22px;
     font-size:60px;
-    margin:5%;
+    margin: 2%;
+}
+.guesses {
+    width: 100%;
 }
   ul {
+      width: 100%;
       display: inline-block;
       list-style: none;
-      padding: 0;
+      padding: 10px;
   }
   img {
       display: inline;
@@ -54,13 +58,12 @@
   }
 
   body {
-    background-image: url('woman.jpg');
+    background-image: url('chalk-board.jpg');
     background-repeat: no-repeat;
-    background-size: 75% 100%;
-    background-position: center;
+    background-position: cover;
   }
 
 #app {
-    width: 60%;
+    width: 100%;
     margin: 50px auto;
 }

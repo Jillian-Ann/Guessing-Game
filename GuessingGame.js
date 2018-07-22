@@ -100,6 +100,8 @@ function makeAGuess(game) {
 }
 
 
+
+
 $ ( "document" ).ready(function(){
 
     let game = new Game();
@@ -114,5 +116,16 @@ $ ( "document" ).ready(function(){
          }
      })
 
-     
+     $( "#hint" ).on("click",function(){
+        var hints = game.provideHint();
+        $('#headers h1').text('The winning number is '+hints[0]+', '+hints[1]+', or '+hints[2]);
+    })
+
+     $( "#reset" ).on("click",function(){
+         game = new Game();
+         $('#headers h1').text('GUESSING GAME');
+         $('#headers h3').text('Guess a number between 1-100!')
+         $('.guess').text('-');
+         $('#hint, #submit').prop("disabled",false);
+     })
  })
